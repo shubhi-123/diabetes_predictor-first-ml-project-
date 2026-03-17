@@ -20,7 +20,7 @@ age = st.number_input("Age")
 if st.button("Predict"):
     input_data = np.array([[glucose, bloodpressure, skinthickness, insulin, bmi, diabetespedigreefunction, age]])
     
-    # ✅ APPLY SCALING (THIS WAS MISSING)
+    # APPLY SCALING (THIS WAS MISSING)
     input_data = scaler.transform(input_data)
 
     prediction = model.predict(input_data)
