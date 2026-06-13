@@ -1,16 +1,40 @@
-# diabetes_predictor-first-ml-project-
+# Diabetes Predictor
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)](https://jupyter.org/)
-[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)](https://www.python.org/)
+## Project Overview
 
-## Overview
+This project predicts whether a person is likely to have diabetes using the **Pima Indians Diabetes Dataset** and a **Logistic Regression** model. The prediction is based on medical attributes such as **Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, and Age**. The project follows end-to-end ML workflow for model development, including data preprocessing, exploratory data analysis (EDA), feature scaling, model training, and evaluation. It serves as a beginner-friendly healthcare prediction project that demonstrates the fundamentals of binary classification using Scikit-learn.
+<img width="467" height="422" alt="1" src="https://github.com/user-attachments/assets/3286b85f-077a-453e-b3a3-58fad3886ca5" />
 
-This repository contains a machine learning project for predicting diabetes using Python and Jupyter Notebook. The project includes model training, data preprocessing (scaling), model persistence with serialized `.pkl` files, and a Python script to provide a simple frontend interface for predictions. It serves as an end-to-end demonstration of building, saving, and deploying a machine learning model for diabetes prediction.
+<img width="435" height="416" alt="2" src="https://github.com/user-attachments/assets/8cf4c929-4e0f-4294-9a82-1618ea702f9f" />
+
+## Features
+
+- Predicts the likelihood of diabetes based on patient health parameters.
+- Performs exploratory data analysis (EDA) to understand data distribution and feature relationships.
+- Includes data preprocessing, standardization, and feature scaling for improved model performance.
+- Uses Logistic Regression for binary classification.
+- Evaluates the model using an 80–20 train-test split.
+- Built using Python, Pandas, Matplotlib, and Scikit-learn.
+
+## 📊 Model Performance
+
+| Metric | Value |
+|----------|----------|
+| **Algorithm** | Logistic Regression |
+| **Dataset** | Pima Indians Diabetes Dataset |
+| **Dataset Size** | 700+ samples |
+| **Train-Test Split** | 80% Training / 20% Testing |
+| **Accuracy** | **67.5%** |
+| **F1-Score** | **0.61** |
 
 ## Tech Stack
 
 - **Languages:**  
   - Python
+  - Jupyter Notebook
 - **Libraries & Tools:**  
   - scikit-learn (for model training, scaling, and persistence)
   - pandas, numpy (for data manipulation)
@@ -59,7 +83,7 @@ This repository contains a machine learning project for predicting diabetes usin
 ```
 .
 ├── .gitignore.txt
-├── diabetes_predictor.ipynb          # Main Jupyter Notebook (EDA, model training)
+├── diabetes_predictor.ipynb          # Main Jupyter Notebook 
 ├── frontend_diabetes_predictor.py    # Python script for user interaction with the model
 ├── model.pkl                         # Serialized trained model
 ├── model1.pkl                        # Alternate/updated model version
@@ -68,10 +92,14 @@ This repository contains a machine learning project for predicting diabetes usin
 └── .ipynb_checkpoints/
     └── diabetes_predictor-checkpoint.ipynb  # Notebook checkpoint (auto-saved)
 ```
+## Future Improvements
 
-## License
+- Experiment with advanced models such as Random Forest, XGBoost, and Support Vector Machines.
+- Perform hyperparameter tuning to improve predictive performance.
+- Apply feature engineering and feature selection techniques.
+- Use cross-validation for more robust model evaluation.
+- Deploy the model as an interactive web application using Streamlit or Flask.
+- Train the model on a larger and more diverse dataset to improve generalization and accuracy.
 
-No license has been specified for this project. Please contact the repository owner for usage permissions.
 
 ---
-[![README powered by ReadmeAI](https://img.shields.io/badge/README-powered%20by%20ReadmeAI-4c9be8?style=flat-square&logo=markdown)](https://www.readmeai.in)
